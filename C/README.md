@@ -33,4 +33,5 @@ El archivo [recursion-fibonacci.c](https://github.com/cr-tempranam/public-portfo
 Se puede observar en `int fibonacci(int n)` que la función se llama a si misma para los dos valores anteriores de la sucesión. A su vez se definen dos casos base para detener la recursividad de la función.
 
 ![fibonacci](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/3-fibonacci.png)
+
 En la imagen se muestra como a travez de un bucle de imprimen los valores de la sucesión hasta un **n** dado
