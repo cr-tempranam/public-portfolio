@@ -24,4 +24,4 @@ Para el cálculo de la serie de Taylor se utilizan funciones auxiliares `long fa
 
 ![taylor-ex](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/2-taylor-ex.png)
 
-En la imagen se observa como a mayor grado de polinomio N mejor será la apoximación.
+En la imagen se observa como a mayor grado de polinomio N mejor será la aproximación.
