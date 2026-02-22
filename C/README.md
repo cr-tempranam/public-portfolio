@@ -15,7 +15,13 @@ Por último, cabe destacar que el mismo tablero es escalable, es decir que se pu
 
 ![chess-board](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/1-chess-board.png)
 
+
 ### 2) Serie de Taylor
 
+En el archivo [functions-calculus.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/2-functions-calculus.c) se aproxima el cálculo de la función exponencial **e^x** mediante Serie de Taylor utilizando `double serieTaylor(double x, int N)`. La aproximación se realiza utilizando un polinomio de grado **N**.
 
-En el archivo [functions-calculus.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/2-functions-calculus.c) bla bla bla
+Para el cálculo de la serie de Taylor se utilizan funciones auxiliares `long factorial(int n)` y `double potencia(double x, int n)`.
+
+![taylor-ex](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/2-taylor-ex.png)
+
+En la imagen se observa como a mayor grado de polinomio N mejor será la apoximación.
