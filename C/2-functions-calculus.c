@@ -33,17 +33,18 @@ double serieTaylor(double x, int N)
 
 int main() 
 {    
-    int N = 20;
+    int N = 10;
     double x;
     double e;
         
     printf("Para calcular e^x, ingrese el valor de x: ");
     scanf("%lf", &x);
+    printf("\n");
 
     for(int i=0;i<=N;i++)
     {
         e = serieTaylor(x,i);
-        printf("El resultado es: %f. \n", e);
+        printf("El resultado es: %f para N = %d. \n", e, i);
     }
 
     return 0;

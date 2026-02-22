@@ -24,4 +24,13 @@ Para el cálculo de la serie de Taylor se utilizan funciones auxiliares `long fa
 
 ![taylor-ex](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/2-taylor-ex.png)
 
-En la imagen se observa como a mayor grado de polinomio N mejor será la aproximación.
+En la imagen se observa como a mayor grado de polinomio N mejor será la aproximación. 
+
+### 3) Sucesión de Fibonacci
+
+El archivo [recursion-fibonacci.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/3-recursion-fibonacci.c) utiliza la recursividad para obtener los valores que se obtienen de la Sucesión de Fibonacci.
+
+Se puede observar en `int fibonacci(int n)` que la función se llama a si misma para los dos valores anteriores de la sucesión. A su vez se definen dos casos base para detener la recursividad de la función.
+
+![fibonacci](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/3-fibonacci.png)
+En la imagen se muestra como a travez de un bucle de imprimen los valores de la sucesión hasta un **n** dado

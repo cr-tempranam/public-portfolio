@@ -5,17 +5,24 @@ int fibonacci(int n){
     if(n==0) return 0;
     if(n==1) return 1;
     return fibonacci(n-1)+fibonacci(n-2);
+    
 }
     
 int main (){
    int n;
    int f;
    
-   printf("Cuál valor de la sucesión de Fibonacci desea ver? \n");
-    scanf("%d",&n);
+   printf("Hasta qué valor de la sucesión de Fibonacci desea ver?\t");
+   scanf("%d",&n);
+   printf("\n");
     
-    f = fibonacci(n);
-    printf("El valor es %d \n", f);
+    for(int i=0; i<=n;i++)
+    {
+        f = fibonacci(i);
+        printf("El valor en n = %d de Fibonacci es %d \n", i,f);
+    };
+    
+   
    
     return 0;
 }
