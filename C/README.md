@@ -38,7 +38,7 @@ En la imagen se muestra como a travez de un bucle de imprimen los valores de la 
 
 ### 3) Divide y Venceras
 
-En [divide-and-conquer.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/4-divide-and-conquer-recursion.c) se utiliza recursividad para obtener un valor minimo dentro de un array. Se define un array de LENGTH valores enteros.
+En [divide-and-conquer.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/4-divide-and-conquer-recursion.c) se utiliza recursividad para obtener un valor mínimo dentro de un array. Se define un array de LENGTH valores enteros.
 
 La función `int min(int v[], int l)` divide el array en dos de manera repetida (recursiva) hasta llegar a un caso base donde quedan dos o un elemento.
 
@@ -48,3 +48,8 @@ Llegada esta instancia, considera los valores del array de a dos, evaluando entr
 ![divide-and-conquer](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/4-divide-and-conquer.png)
 
 En la imagen se pueden ver los valores ingresados en el array y cual es el menor valor según la función. 
+
+
+![recursion](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/4-recursion.png)
+
+En esta imagen se muestra mediante un diagrama de arbol, como se divide el array hasta llegar a los casos base y como va comparando los valores de a dos hasta llegar a la cima. 
