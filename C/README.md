@@ -73,3 +73,19 @@ Por último, se crearon usuarios con los datos definidos en la struct, se creó 
 ![sort-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/5-sort-array.png)
 
 En la imagen se observa el listado de usuarios ordenados por su edad de menor a mayor.  
+
+### 6) Array Dinamico
+
+El archivo [dynamic-array.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/6-dynamic-array.c) utiliza la memoria dinámica como una manera transitoria de almacenar una serie de calificaciones para obtener ciertos resultados.
+
+Inicia creando algunas funciones matemáticas y estadísticas como lo son el `promedio`, la `potencia`, la `varianza` y la `desviación estándar`.
+
+Se define una cantidad de *n* calificaciones a considerar, y se ingresa en un array a través de un string la calificaciones deseadas.
+
+Luego a través del `malloc` se pide memoria dinámica donde se almacena este string con las calificaciones.
+ 
+Se implementan las funciones creadas y se imprimen los resultados por pantalla. Por último se libera el espacio ocupado en la memoria dinámica.
+
+![dynamic-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/6-dynamic-array.png)
+
+En la imagen podemos observar el listado de calificaciones, la nota más alta, la más baja, la nota promedio y el desvió estándar del promedio.

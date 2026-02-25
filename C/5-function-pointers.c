@@ -39,8 +39,8 @@ void sortArray(void* v[], int l, Comparer cmp, int asc)
 
 int compareInt(void* x, void* y)
 {
-    int n1 = (int)x;
-    int n2 = (int)y;
+    int n1 = (long)x;
+    int n2 = (long)y;
 
     return n1 >= n2;
 }
@@ -110,10 +110,10 @@ int main()
     /*
         SE PUEDE SELECCIONAR EL CRITERIO DE ORDENAMIENTO
         YA SEA POR Nº ID, EDAD, APELLIDO O NOMBRE
-        DE MANERA ASCENDENTE O DESCENDENTE    
+        DE MANERA ASCENDENTE (1) O DESCENDENTE (2)   
     */
 
-    sortArray(u,5,compareByAge,0);
+    sortArray((void**)u,5,compareByAge,1);
     //sortArray(u,5,compareById,1);
     //sortArray(u,5,compareByLastName,1);
     //sortArray(u,5,compareByFirstName,0);
