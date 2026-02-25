@@ -71,4 +71,5 @@ Después están las distintas funciones de comparación según el tipo de dato, 
 Por último, se crearon usuarios con los datos definidos en la struct, se creó la array de punteros a estos usuarios, se llamó a la función de ordenamiento según un comparador y un criterio, y se utiliza un bucle para imprimir todos los usuarios con sus elementos según el nuevo orden asignado.
 
 ![sort-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/5-sort-array.png)
+
 En la imagen se observa el listado de usuarios ordenados por su edad de menor a mayor.  
