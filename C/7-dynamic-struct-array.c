@@ -41,7 +41,7 @@ int main()
     }
     
 
-    for(int i=0; i<n ;i++) //LIBERO LOS 6 ARRAYS
+    for(int i=0; i<n ;i++) //LIBERO LOS CHAR Y LOS USERS
     {
         free(u[i]->lastName);
         free(u[i]->firstName);
@@ -49,7 +49,7 @@ int main()
         free(u[i]);
     }
 
-    free(u); //LIBERO EL 3 USER
+    free(u); //LIBERO EL ARRAY DE PUNTEROS
 
     
         

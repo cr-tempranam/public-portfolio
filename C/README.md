@@ -89,3 +89,19 @@ Se implementan las funciones creadas y se imprimen los resultados por pantalla. 
 ![dynamic-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/6-dynamic-array.png)
 
 En la imagen podemos observar el listado de calificaciones, la nota más alta, la más baja, la nota promedio y el desvió estándar del promedio.
+
+### 7) Array dinámico de punteros a estructura
+En el archivo [dynamic-struct-array.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/7-dynamic-struct-array.c) se implementa un
+un array guardado en la memoria dinámica que contiene punteros a estructuras de usuarios.
+
+Inicia con la creación del tipo de dato `User` a través de `typedef struct`. Dentro de esta estructura existen dos valores enteros (int) y dos punteros a char (alfanuméricos). 
+
+Se define la cantidad de usuarios que tendrá la lista. Continua creando un array (`char data[]`) que contiene un string con todos los usuarios separando los datos por comas y a los usuarios por "\n".
+
+Luego se solicita múltiples espacios en la memoria dinámica usando `malloc`. Primero para el array de punteros a usuarios (estructura), luego para los usuarios en si, y por ultimo para los char apuntados por la estructura (apellidos y nombres).
+
+Se almacena la información en los respectivos espacios de memoria y se imprimen los resultados por consola como se muestra a continuación. 
+
+![dynamic-struct-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/7-dynamic-struct-array.png)
+
+Por último, usando `free` se libera el espacio ocupado en la memoria dinámica en el orden inverso a como se pidió, es decir que primero libera lo ocupado por los string (char), luego las estructuras, y al final el array de punteros a estructuras.
