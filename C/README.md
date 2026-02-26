@@ -91,8 +91,7 @@ Se implementan las funciones creadas y se imprimen los resultados por pantalla. 
 En la imagen podemos observar el listado de calificaciones, la nota más alta, la más baja, la nota promedio y el desvió estándar del promedio.
 
 ### 7) Array dinámico de punteros a estructura
-En el archivo [dynamic-struct-array.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/7-dynamic-struct-array.c) se implementa un
-un array guardado en la memoria dinámica que contiene punteros a estructuras de usuarios.
+En el archivo [dynamic-struct-array.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/7-dynamic-struct-array.c) se implementa un array guardado en la memoria dinámica que contiene punteros a estructuras de usuarios.
 
 Inicia con la creación del tipo de dato `User` a través de `typedef struct`. Dentro de esta estructura existen dos valores enteros (int) y dos punteros a char (alfanuméricos). 
 
