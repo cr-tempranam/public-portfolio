@@ -80,22 +80,22 @@ El archivo [dynamic-array.c](https://github.com/cr-tempranam/public-portfolio/bl
 
 Inicia creando algunas funciones matemáticas y estadísticas como lo son el `promedio`, la `potencia`, la `varianza` y la `desviación estándar`.
 
-Se define una cantidad de *n* calificaciones a considerar, y se ingresa en un array a través de un string la calificaciones deseadas.
+Se define una cantidad de *n* calificaciones a considerar y se las carga en un array a través de un string.
 
 Luego a través del `malloc` se pide memoria dinámica donde se almacena este string con las calificaciones.
  
-Se implementan las funciones creadas y se imprimen los resultados por pantalla. Por último se libera el espacio ocupado en la memoria dinámica.
+Se utilizan las funciones creadas y se imprimen los resultados por pantalla. Por último se libera el espacio ocupado en la memoria dinámica.
 
 ![dynamic-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/6-dynamic-array.png)
 
-En la imagen podemos observar el listado de calificaciones, la nota más alta, la más baja, la nota promedio y el desvió estándar del promedio.
+En la imagen podemos observar el listado de calificaciones, la nota más alta, la más baja, la nota promedio y el desvió estándar.
 
 ### 7) Array dinámico de punteros a estructura
 En el archivo [dynamic-struct-array.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/7-dynamic-struct-array.c) se implementa un array guardado en la memoria dinámica que contiene punteros a estructuras de usuarios.
 
-Inicia con la creación del tipo de dato `User` a través de `typedef struct`. Dentro de esta estructura existen dos valores enteros (int) y dos punteros a char (alfanuméricos). 
+Inicia con la creación del tipo de dato `User` a través de `typedef struct`. Dentro de esta estructura existen dos valores enteros (int) y dos punteros a char (strings). 
 
-Se define la cantidad de usuarios que tendrá la lista. Continua creando un array (`char data[]`) que contiene un string con todos los usuarios separando los datos por comas y a los usuarios por "\n".
+Se define la cantidad de usuarios que tendrá la lista. Se inicializa un array (`char data[]`) que contiene un string con todos los usuarios separando los datos por comas y a los usuarios por "\n".
 
 Luego se solicita múltiples espacios en la memoria dinámica usando `malloc`. Primero para el array de punteros a usuarios (estructura), luego para los usuarios en si, y por ultimo para los char apuntados por la estructura (apellidos y nombres).
 
@@ -103,4 +103,4 @@ Se almacena la información en los respectivos espacios de memoria y se imprimen
 
 ![dynamic-struct-array](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/7-dynamic-struct-array.png)
 
-Por último, usando `free` se libera el espacio ocupado en la memoria dinámica en el orden inverso a como se pidió, es decir que primero libera lo ocupado por los string (char), luego las estructuras, y al final el array de punteros a estructuras.
+Por último, usando `free` se libera el espacio ocupado en la memoria dinámica en el orden inverso a como se pidió, es decir que primero libera lo ocupado por los string (char) y las estructuras de cada usuario, y al final el array de punteros a estructuras.
