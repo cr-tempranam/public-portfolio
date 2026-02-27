@@ -60,22 +60,22 @@ int main (int argc, char const* argv[])
         
         if(strcmp(param, "s") == 0)
         {
-            if( 0 <= s && s <=2) s = value;
+            if( 0 <= value && value <=2) s = value;
         } 
 
         if(strcmp(param, "A") == 0)
         {
-            if( A >= 0) A = value;
+            if( value >= 0) A = value;
         } 
 
         if(strcmp(param, "f") == 0)
         {
-            if( f >= 0) f = value;
+            if( value >= 0) f = value;
         }
 
         if(strcmp(param, "N") == 0)
         { 
-            if( N >= 0) N = value;
+            if( value >= 0) N = value;
         }
     }    
 
