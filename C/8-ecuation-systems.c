@@ -64,19 +64,6 @@ int** crearAdjunta(int **A, int b[],int n, int c)
     return AD;
 }
 
-void imprimirMatriz(int **A, int n)
-{
-    for(int i=0; i<n; i++)
-    {
-        for(int j=0; j<n;j++)
-        {
-            printf("%d", A[i][j]);
-            printf("\t");
-        }
-        printf("\n");
-    }
-}
-
 double *resolve(int **A, int *b, int n)
 {
     
@@ -93,6 +80,21 @@ double *resolve(int **A, int *b, int n)
     return r;
  
 }
+
+void imprimirMatriz(int **A, int n)
+{
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<n;j++)
+        {
+            printf("%d", A[i][j]);
+            printf("\t");
+        }
+        printf("\n");
+    }
+}
+
+
 
 int main() 
 {
@@ -120,13 +122,14 @@ int main()
     double *R = resolve(A,b,n);
 
  
-    printf("MUESTRA EL RESULTADO\n");
+    printf("La solución del sistema A x = b es:\n\n");
 
+    printf("[");
     for(int i=0; i<n;i++)
-    {
-        printf("%.2f\n",R[i]);
+    {   
+        printf("%.2f%s",R[i], i < n-1? " " : "");
     }
-    
+    printf("]");
 
     freeMatriz(A,n);
     free(b);

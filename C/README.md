@@ -108,19 +108,20 @@ Por último, usando `free` se libera el espacio ocupado en la memoria dinámica 
 ### 8) Sistemas de ecuaciones
 En el archivo [ecuation-systems.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/8-ecuation-systems.c) se resuelve un sistema de tres ecuaciones con tres incógnitas utilizando el método de determinantes.
 
-Se inicia creando algunas funciones necesarias para la resolución. `int** crearMatriz(int n)` pide espacio en la memoria dinámica para una matriz de *n* elementos. A su vez, asigna el valor cero en esas ubicaciones.
+Se inicia creando algunas funciones necesarias para la resolución. 
+- `int** crearMatriz(int n)` pide espacio en la memoria dinámica para una matriz de *n x n* elementos. A su vez, asigna el valor cero en esas ubicaciones.
 
-Luego la función `int det(int **A)` que calcula el determinante de una matriz de tres por tres. 
+- Luego la función `int det(int **A)` que calcula el determinante de una matriz de tres por tres. 
 
-`void freeMatriz(int **A, int n)` libera los valores solicitados a la memoria dinámica y `void copiarMatriz(int **A, int **AD, int n)` recibe una matriz A y copia los valores de ella en otra matriz B.
+- `void freeMatriz(int **A, int n)` libera los valores solicitados a la memoria dinámica y `void copiarMatriz(int **A, int **AD, int n)` recibe una matriz A y copia los valores de ella en otra matriz B.
 
-La función `int** crearAdjunta(int **A, int b[],int n, int c)` crea una matriz adjunta necesaria para el cálculo por método de determinantes. 
+- La función `int** crearAdjunta(int **A, int b[],int n, int c)` crea una matriz adjunta necesaria para el cálculo por método de determinantes. 
 
-La última función es `double *resolve(int **A, int *b, int n)` que obtienen los valores de las variables. 
+- La última función es `double *resolve(int **A, int *b, int n)` que obtienen los valores de las variables incógnitas. 
 
-Para comprobar, se asigna el tamaño de la matriz, se usa `crearMatriz` y se pide memoria para una matriz *b* que representa los resultados en el sistema de ecuaciones y se cargan los valores en cada unos de los vectores de *A* y *b*.
+Para resolver el sistema de ecuaciones se usa `crearMatriz(n)` y se pide memoria para un vector *b* que representa los resultados en el sistema de ecuaciones y se cargan los valores en cada unos de los vectores de *A* y *b*.
 
-Se utiliza `resolve` con los parámetros de A, b y n y se guarda lo obtenido en una matriz de resultados. 
+Se utiliza `resolve` con los parámetros de A, b y n y se guarda lo obtenido en un vector de resultados. 
 
 ![ecuation systems](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/img/8-ecuation-systems.png)
 
