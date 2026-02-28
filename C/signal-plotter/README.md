@@ -23,7 +23,7 @@ Continua con un `for` que imprime por consola las coordenadas para los valores d
 
 El archivo [plotter.c](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/plotter.c) inicia definiendo un tipo de dato `Point` que tiene dos valores `double`. 
 
-Luego está la función `char** crearMatriz(int n, int m)` que se encarga de pedir memoria dinámica para almacenar una matriz de *n x m* que contendrá los resultados obtenidos, pero al inicio almacena el valor cero en todos los espacios.
+Luego está la función `char** crearMatriz(int n, int m)` que se encarga de pedir memoria dinámica para almacenar una matriz de *n x m* que contendrá los resultados obtenidos pero al inicio almacena el valor cero en todos los espacios.
 
 Sigue `void GeneratePbmFile(char** M, int W, int H)` que imprime los valores de la matriz dinámica en un archivo `output.pbm`. Si existe el archivo lo reescribe, de lo contrario lo crea y guarda esos valores. 
 
@@ -31,14 +31,14 @@ Se pide memoria para un array de puntos. A través del ` while (fgets(line, 100,
 
 Se define el tamaño de la imagen en 200 x 200 px, se crea una matriz de igual tamaño que se almacena en la memoria dinámica. 
 
-Por último, el `for` revisa los valores del array de puntos y los escala al tamaño de la imagen final. 
+Por último, el `for` revisa los valores del array de puntos y los escala al tamaño de la imagen final, es decir se transforman los puntos en coordenadas de la matriz. Luego en esas coordenadas se enciende el pixel, se almacena el valor 1. Y finalmente se genera la imagen utilizando el `GeneratePbmFile`. 
 
-Donde en la matriz existan valores distintos de 0 tanto en *y* como en *x*, guarda un 1.  Se utiliza el `GeneratePbmFile` y listo. 
+A continuación se pueden visualizar algunas de las imágenes generadas a través del graficador para los distintos tipos de señales, cambiando a través de `CLA` los valores de los parámetros `tipo de señal (s), amplitud (A), frecuencia (f), y cantidad de armónicos (N)`. 
 
-A continuación se pueden visualizar algunas de las imágenes generadas a través del graficador para los distintos tipos de señales, cambiando a través de `CLA` los valores de los parámetros `tipo de señal, amplitud, frecuencia, y cantidad de armónicos`. 
+Como conclusion podemos observar que a medida que se incrementa la cantidad de armonicos en una señal, la misma se aproxima cada vez más a la señal ideal.
 
 
-Señales Senoidales.
+**Señales Senoidales**
 
 ![senoidal](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/senoidal_0.png)
 ![senoidal](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/senoidal_1.png)
@@ -48,17 +48,17 @@ Señales Senoidales.
 ![senoidal](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/senoidal_5.png)
 
 
-Señales Cuadradas.
+**Señales Cuadradas**
 
 ![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_0.png)
 ![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_1.png)
 ![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_2.png)
 ![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_3.png)
-![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_4.png)
 ![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_5.png)
+![cuadrada](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/cuadrada_4.png)
 
 
-Señales Triangulares.
+**Señales Triangulares**
 
 ![triangular](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/triangular_0.png)
 ![triangular](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/triangular_1.png)
@@ -66,4 +66,3 @@ Señales Triangulares.
 ![triangular](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/triangular_3.png)
 ![triangular](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/triangular_4.png)
 ![triangular](https://github.com/cr-tempranam/public-portfolio/blob/develop/C/signal-plotter/img/triangular_5.png)
-
