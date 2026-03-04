@@ -14,5 +14,7 @@ Se comienza a pensar en los indicadores más adecuados y se eligen que objetos v
 #### DASHBOARD
 
 ![comercial](https://github.com/cr-tempranam/public-portfolio/blob/develop/Power BI/img/dashboard-1.png)
+
 ![marketing](https://github.com/cr-tempranam/public-portfolio/blob/develop/Power BI/img/dashboard-2.png)
+
 ![stock](https://github.com/cr-tempranam/public-portfolio/blob/develop/Power BI/img/dashboard-3.png)
