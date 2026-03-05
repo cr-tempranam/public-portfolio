@@ -2,8 +2,8 @@
 
 
 #### OBJETIVO
-El presente proyecto consiste en el analisis de datos de la empresa CPCE S.A. La misma proporcionó una base de datos de Ventas, Clientes y Productos, para un periodo determinado.
-El objetivo del proyecto consiste en presentar una serie de tableros con informacion importante destinadas a las áreas de Marketing, Comercial y Almacenamiento. 
+El presente proyecto consiste en el análisis de datos de la empresa CPCE S.A. La misma proporcionó una base de datos de Ventas, Clientes y Productos, para un periodo determinado.
+El objetivo del proyecto consiste en presentar una serie de tableros con información importante destinadas a las áreas de Marketing, Comercial y Almacenamiento. 
 Se busca que los mismos estén acompañados de propuestas sugeridas basadas en lo recopilado por dichos tableros. 
 
 #### PROCEDIMIENTO
@@ -11,24 +11,27 @@ Se inicia importando las bases de datos proporcionadas a Power BI Desktop, reali
 
 ![tablas_relaciones](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/tablas_relaciones.png)
 
-Posteriormente se incorporaron nuevas columnas con cálculos adicionales necesarios para el analisis. Tanto para las transformaciones como para la creación de columnas adicionales se implementó Power Qwery. 
+Posteriormente se incorporaron nuevas columnas con cálculos adicionales necesarios para el análisis. Tanto para las transformaciones como para la creación de columnas adicionales se implementó Power Qwery. 
 
 ![Power_Query](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/Power_Query.png)
 
 Se comienza a pensar en los indicadores más adecuados y se eligen que objetos visuales reflejan mejor los resultados. Por último se diagrama la estructura de la presentación, la paleta de colores y se plantean las sugerencias correspondientes.
 
 #### DASHBOARD
-En el tablero `comercial` se apunta a mostrar valores y resultados asociados a ventas, utilidades, y costas. Se observa como partida un filtro segmentador por los paises que se desea ver y la distribucion de ventas totales por pais. Tambien se incluyen tarjetas que refieren a ventas totales, utilidades obtenidas y costos totales de esas ventas. 
-Se muestra ademas un pequeño indicador con el margen de ganancia promedio que se obtiene por categoria de producto, la evolución de las ventas por mes, un comparador de ventas, costas y utilidades por mes y su variación diaria a travez de un grafico de lineas intentando detectar algun tipo de comportamiento temporal.
+En el tablero `comercial` se apunta a mostrar valores y resultados asociados a ventas, utilidades, y costas. Se observa como partida un filtro segmentador por los países que se desea ver y la distribución de ventas totales por país. Tambien se incluyen tarjetas que refieren a ventas totales, utilidades obtenidas y costos totales de esas ventas. 
+Se muestra además un pequeño indicador con el margen de ganancia promedio que se obtiene por categoría de producto, la evolución de las ventas por mes, un comparador de ventas, costas y utilidades por mes y su variación diaria a través de un gráfico de líneas temporales..
+Este tablero constituye una base para estudiar como el comportamiento de las ventas por países, detectar si existen factores asociados a cuestiones geográficas, económicas, o relacionadas a una cuestión de tiempo.
 
 ![comercial](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-1.png)
 
 
-aca la gilada
+En el tablero `marketing` se puede observar la distribución de las ventas totales por diferentes criterios como lo son el estado civil de los clientes, su género, y el país de origen. 
+Además se visualizan una serie de tablas que reflejan un top ten de los productos con mayor utilidad generada, los más vendidos, y los menos vendidos.
+Tambien dos tablas con los top ten de los mejores clientes según la cantidad de unidades vendidas y los montos totales de compra. 
+Toda esta información está orientada establecer esquemas de beneficios para compradores, promociones para incrementar las ventas de los productos menos vendidos y mejorar las ventas de aquellos con mayor utilidad. 
+
 
 ![marketing](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-2.png)
 
 
-ni cabida
-
-![stock](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-3.png)
+Por ultimo en el tablero `stock` ... blah blah blah informacion 
