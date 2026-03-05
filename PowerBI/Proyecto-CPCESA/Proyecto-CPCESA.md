@@ -34,4 +34,8 @@ Toda esta información está orientada establecer esquemas de beneficios para co
 ![marketing](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-2.png)
 
 
-Por ultimo en el tablero `stock` ... blah blah blah informacion 
+Por ultimo en el tablero `stock`, se buscó orientar el análisis a la disponibilidad, conveniencia logística y económica de tener cada producto.  Para ello se implementó un esquema jerárquico para visualizar las ventas de productos por categorías y subcategorías. 
+Tambien una serie de tablas indicando el porcentaje de ganancias que representan los productos sobre las ventas totales, las ventas en unidades por mes, unidades en stock y unidades vendidas. 
+
+![stock](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-3.png)
+
