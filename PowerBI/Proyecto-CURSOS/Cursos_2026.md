@@ -16,4 +16,4 @@ Luego dos gráficos de distribución circular de horas por jornada (el grafico d
 
 ![dashboard](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CURSOS/img/dashboard.png)
 
-Podemos concluir que los cursos más buscados son de Excel, Word y Access, en ese orden; Tambien que el pais con mayor demanda de cursos en España seguido de cerca por Francia, y que el horario más elegido es el turno tarde y luego el turno noche.
+Podemos concluir que los cursos más buscados son de Excel, Word y Access, en ese orden; Tambien que el pais con mayor demanda de cursos es España seguido de cerca por Francia, y que el horario más elegido es el turno tarde y luego el turno noche.
