@@ -14,8 +14,8 @@ Se comienza a pensar en los indicadores más adecuados y se eligen que objetos v
 #### DASHBOARD
 En el tablero `comercial` se apunta a mostrar valores y resultados asociados a ventas, utilidades, y costas. Se observa como partida un filtro segmentador por los paises que se desea ver y la distribucion de ventas totales por pais. Tambien se incluyen tarjetas que refieren a ventas totales, utilidades obtenidas y costos totales de esas ventas. 
 Se muestra ademas un pequeño indicador con el margen de ganancia promedio que se obtiene por categoria de producto, la evolución de las ventas por mes, un comparador de ventas, costas y utilidades por mes y su variación diaria a travez de un grafico de lineas intentando detectar algun tipo de comportamiento temporal.
-![comercial](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/img/dashboard-1.png)
+![comercial](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-1.png)
 
-![marketing](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/img/dashboard-2.png)
+![marketing](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-2.png)
 
-![stock](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/img/dashboard-3.png)
+![stock](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-CPCESA/img/dashboard-3.png)
