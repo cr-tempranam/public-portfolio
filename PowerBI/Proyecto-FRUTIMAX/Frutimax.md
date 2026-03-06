@@ -9,10 +9,10 @@ Se trabajó con bases de datos incluidas en tablas de ventas, productos, provinc
 
 ![modelado de datos](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-FRUTIMAX/img/data_model.png)
 
-Por ultimo se incorporan los objetos visuales más adecuados y se aplican detalles estéticos a la presentación del tablero. 
+Por último se incorporan los objetos visuales más adecuados y se aplican detalles estéticos a la presentación del tablero. 
 
 #### DASHBOARD
-El tablero inicia con el uso de dos segmentadores que permiten filtrar la información tanto por provincia donde se vendió como tambien por el tipo de producto.
+El tablero inicia con el uso de dos segmentadores que permiten filtrar la información tanto por provincia donde se vendió como también por el tipo de producto.
 
 Continua con un diagrama *Treemap* que muestra las ventas distribuidas por provincia y una tabla de unidades vendidas por tipo de producto y el porcentaje que representan sobre el total.
 
