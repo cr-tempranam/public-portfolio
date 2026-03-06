@@ -3,13 +3,14 @@
 
 #### OBJETIVO
 
-A partir de la base de datos de `SQLite` proporcionada, se confeccionó en modelo relacionando las tablas como se visualiza a continuación y se realizaron unas consultas a la base de datos. 
+A partir de la base de datos de `SQLite` proporcionada, se confeccionó el modelo relacionando las tablas como se visualiza a continuación y se realizaron unas consultas a la base de datos. 
+
 ![data_model](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/data_model.png)
 
 
 #### PROCEDIMIENTO
 
-Como primera consulta se busco conocer los turnos confirmados, ordenados de la fecha mas cercana a la fecha más lejana. Buscamos saber la identificación del turno, la fecha del turno, el nombre del paciente, el estado de confirmación, especialidad soliciada y médico.
+Como primera consulta se buscó conocer los turnos confirmados, ordenados de la fecha más cercana a la fecha más lejana. Buscamos saber la identificación del turno, la fecha del turno, el nombre del paciente, el estado de confirmación, especialidad solicitada y médico.
 
 ```
 SELECT t.id_turno, t.fecha, p.nombre AS Paciente, t.estado, e.nombre as Especialidad, m.nombre as Medico
@@ -22,7 +23,7 @@ WHERE t.estado = 'Confirmado'
 
 ORDER BY t.fecha DESC;
 ```
-![Query1](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query1.png)
+![Query1](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query1.jpeg)
 
 
 
@@ -43,11 +44,11 @@ GROUP BY Especialidad
 ORDER BY CANTIDAD_TURNOS DESC
 LIMIT 5;
 ```
-![Query2](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query2.png)
+![Query2](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query2.jpeg)
 
 
 
-Por último intriga conocer la cantidad de veces que tuvo consultas médicas un paciente, independientemente de la especialidad de la que se trate. Se quiere ver solo los nombres de los pacientes y la cantidad de veces que fue atendido, ordenado de manera alfabetica.
+Por último intriga conocer la cantidad de veces que tuvo consultas médicas un paciente, independientemente de la especialidad de la que se trate. Se quiere ver solo los nombres de los pacientes y la cantidad de veces que fue atendido, ordenado de manera alfabética.
 
 ```
 SELECT p.nombre AS Paciente, COUNT(*) CANTIDAD_TURNOS_ATENDIDOS
@@ -64,4 +65,4 @@ ORDER BY p.nombre
 ```
 
 
-![Query3](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query3.png)
+![Query3](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Turnos_médicos/img/Query3.jpeg)
