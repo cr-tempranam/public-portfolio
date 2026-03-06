@@ -18,7 +18,7 @@ Continua con un diagrama *Treemap* que muestra las ventas distribuidas por provi
 
 Luego un graficador por filas que muestra las ventas en pesos por tipo de producto. Seguido de este, existe un gráfico de líneas que muestra la evolución de las ventas en millones de pesos a lo largo del año. 
 
-Por ultimo podemos ver un mapa que refleja los puntos de distribución de productos en donde se visualiza que mayor será el tamaño del punto cuando más sean las ventas realizadas en ese espacio.
+Por último podemos ver un mapa que refleja los puntos de distribución de productos en donde se visualiza que mayor será el tamaño del punto cuando más sean las ventas realizadas en ese espacio.
 
 ![dashboard](https://github.com/cr-tempranam/public-portfolio/blob/develop/PowerBI/Proyecto-FRUTIMAX/img/dashboard.png)
 
