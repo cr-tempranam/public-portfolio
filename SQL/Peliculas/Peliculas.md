@@ -24,7 +24,7 @@ ORDER BY Cantidad_Peliculas
 ![Query1](https://github.com/cr-tempranam/public-portfolio/blob/develop/SQL/Peliculas/img/Query1.jpeg)
 
 
-Luego se requiere conocer las películas realizadas por el "director 6". Se desea saber los títulos de dichas películas, el año de estreno y si efectivamente perteneces a este director. Tal listado deberá estar ordenado del título más antiguo al más moderno.
+Luego se requiere conocer las películas realizadas por el "director 6". Se desea saber los títulos de dichas películas, el año de estreno y si efectivamente pertenecen a este director. Tal listado deberá estar ordenado del título más antiguo al más moderno.
 
 ```
 SELECT p.titulo, p.anio, d.nombre Director
