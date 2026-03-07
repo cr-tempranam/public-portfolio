@@ -10,7 +10,7 @@ A partir de la base de datos de `SQLite` proporcionada, se confeccionó el model
 
 #### PROCEDIMIENTO
 
-Como primera consulta se buscó conocer los turnos confirmados, ordenados de la fecha más cercana a la fecha más lejana. Buscamos saber la identificación del turno, la fecha del turno, el nombre del paciente, el estado de confirmación, especialidad solicitada y médico.
+- Como primera consulta se buscó conocer los turnos confirmados, ordenados de la fecha más cercana a la fecha más lejana. Buscamos saber la identificación del turno, la fecha del turno, el nombre del paciente, el estado de confirmación, especialidad solicitada y médico.
 
 ```
 SELECT t.id_turno, t.fecha, p.nombre AS Paciente, t.estado, e.nombre as Especialidad, m.nombre as Medico
@@ -28,7 +28,7 @@ ORDER BY t.fecha DESC;
 
 
 
-Ahora se busca saber las especialidades con la mayor cantidad de turnos confirmados, y solo ver las primeras 5 especialidades  con más turnos confirmados. 
+- Ahora se busca saber las especialidades con la mayor cantidad de turnos confirmados, y solo ver las primeras 5 especialidades  con más turnos confirmados. 
 
 ```
 SELECT e.nombre as Especialidad, COUNT(*) CANTIDAD_TURNOS
@@ -48,7 +48,7 @@ LIMIT 5;
 
 
 
-Por último intriga conocer la cantidad de veces que tuvo consultas médicas un paciente, independientemente de la especialidad de la que se trate. Se quiere ver solo los nombres de los pacientes y la cantidad de veces que fue atendido, ordenado de manera alfabética.
+- Por último intriga conocer la cantidad de veces que tuvo consultas médicas un paciente, independientemente de la especialidad de la que se trate. Se quiere ver solo los nombres de los pacientes y la cantidad de veces que fue atendido, ordenado de manera alfabética.
 
 ```
 SELECT p.nombre AS Paciente, COUNT(*) CANTIDAD_TURNOS_ATENDIDOS
